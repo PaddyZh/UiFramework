@@ -1,13 +1,13 @@
 import os
-import public.common.HTMLTestRunner as HTMLTestRunner
+import common.HTMLTestRunner as HTMLTestRunner
 import getpathInfo
 import unittest
 import readConfig
-from public.common.configEmail import SendEmail
+from common.configEmail import SendEmail
 #import pythoncom
 import datetime
 import time
-import public.common.Log
+import logs.Log
 
 """
 可以说是项目总开关,下面可以配置Email.
@@ -15,9 +15,9 @@ import public.common.Log
 
 
 path = getpathInfo.get_Path()
-report_path = os.path.join(path, 'report\\testreport')
+report_path = os.path.join(path, 'report')
 on_off = readConfig.ReadConfig().get_email('on_off')
-log = public.common.Log.logger
+log = logs.Log.logger
 
 class AllTest:  # 定义一个类AllTest
     def __init__(self):  # 初始化一些参数和数据
@@ -104,7 +104,7 @@ class AllTest:  # 定义一个类AllTest
             recv=['1019356500@qq.com'],
             #recv=['liyuhang@icc.link','paddy.zhao@icc.link','aurora.sun@icc.link'],
             # recv=['caixinjiang@icc.link','jim@icc.link','xiesheng@icc.link','liyuhang@icc.link',],
-            title=str(datetime.date.today()) + ' WebUI自动化测试',
+            title=str(datetime.date.today()) + readConfig.ReadConfig.get_app('app1') + ' 自动化测试',
             content="执行结果：" + "\n" + run_suit[35:67] + "\n" + "附件需下载,然后使用谷歌浏览器打开！",
             file=resultPath,
             #file=r'/Users/icc-hi/PycharmProjects/pythonProject/iCC_interface/interfaceTest/result/report.html',

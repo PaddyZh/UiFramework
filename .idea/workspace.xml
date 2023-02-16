@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f196996b-60a8-47e3-a585-c7294d6f118d" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/BasePage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/DemoApp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/baiduIndexPage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/readConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/runAll.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/iCC_interfaceTest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/pycharm_workspace/pycharm_workspace/UiFramework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\pycharm_workspace\pycharm_workspace\UiFramework" />
@@ -56,7 +62,7 @@
       <recent name="D:\pycharm_workspace\pycharm_workspace\UiFramework" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Test">
+  <component name="RunManager" selected="Python.readConfig (1)">
     <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UiFramework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,8 +175,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Test" />
         <item itemvalue="Python.readConfig (1)" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.getpathInfo" />
         <item itemvalue="Python.readConfig" />
       </list>
@@ -188,6 +194,7 @@
       <workItem from="1676432614119" duration="5038000" />
       <workItem from="1676452432169" duration="253000" />
       <workItem from="1676461449987" duration="5462000" />
+      <workItem from="1676534375671" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1676529173032</created>
@@ -207,8 +214,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UiFramework$readConfig__1_.coverage" NAME="readConfig (1) Coverage Results" MODIFIED="1676445739495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UiFramework$Test.coverage" NAME="Test Coverage Results" MODIFIED="1676463987266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UiFramework$readConfig__1_.coverage" NAME="readConfig (1) Coverage Results" MODIFIED="1676534838344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UiFramework$getpathInfo.coverage" NAME="getpathInfo Coverage Results" MODIFIED="1676443121482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/UiFramework$readConfig.coverage" NAME="readConfig Coverage Results" MODIFIED="1676443052944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>
