@@ -7,14 +7,14 @@ import time
 
 path = getpathInfo.get_Path()
 log_path = os.path.join(path, 'logs')  # 存放log文件的路径
-
+now = time.strftime('%Y-%m-%d_%H_%M_%S')
 
 class Logger(object):
     def __init__(self):
         self.logger_name = os.path.join(log_path, '{0}.log'.format(time.strftime('%Y-%m-%d')))
         self.logger = logging.getLogger(self.logger_name)
         logging.root.setLevel(logging.NOTSET)
-        # self.log_file_name = 'logs'  # 日志文件的名称
+        self.log_file_name = 'logs' + now  # 日志文件的名称
         self.backup_count = 5  # 最多存放日志的数量
         # 日志输出级别
         self.console_output_level = 'WARNING'
@@ -31,7 +31,7 @@ class Logger(object):
             self.logger.addHandler(console_handler)
 
             # 每天重新创建一个日志文件，最多保留backup_count份
-            file_handler = TimedRotatingFileHandler(filename=os.path.join(log_path, self.logger_name), when='D',
+            file_handler = TimedRotatingFileHandler(filename=os.path.join(log_path, self.log_file_name), when='D',
                                                     interval=1, backupCount=self.backup_count, delay=True,
                                                     encoding='utf-8')
             file_handler.setFormatter(self.formatter)
