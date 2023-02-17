@@ -17,10 +17,6 @@ config.read(config_path, encoding='utf-8')
 
 class ReadConfig():
 
-    def get_http(self, name):
-        value = config.get('HTTP', name)
-        return value
-
     def get_email(self, name):
         value = config.get('EMAIL', name)
         return value
@@ -33,6 +29,10 @@ class ReadConfig():
         value = config.get('APP', name)
         return value
 
+    def get_devices(self, name):
+        value = config.get('DEVICES', name)
+        return value
+
 
 if __name__ == '__main__':
-    print(ReadConfig.get_app('', 'app1'))
+    print(ReadConfig().get_devices('device1'))

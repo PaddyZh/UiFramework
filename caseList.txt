@@ -1,2 +1,2 @@
-#play
-testCase/test_login
+#login
+case/Login/test_login

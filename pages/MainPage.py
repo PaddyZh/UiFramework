@@ -1,8 +1,8 @@
-"""
-    首页
-"""
-
 from base.DemoApp import DemoApp
+
+"""
+首页(登录等，可自行添加)
+"""
 
 
 class MainPage(DemoApp):
@@ -11,7 +11,4 @@ class MainPage(DemoApp):
         # 拿到上个页面的driver
         self.d = driver
 
-    def click_login(self):
-        """
-            点击会员登录按钮
-        """
+
